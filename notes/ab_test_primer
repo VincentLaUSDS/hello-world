@@ -2,7 +2,7 @@ An A/B Testing Primer
 
 * Test the change that you will implement
 
-Many of the most important DS contributions at Clover have been operational changes, not strategy changes.  If we test the 'idea' of a thing that we will do, and leave room for different implementation when a tested change is deployed, we lose the majority of the usefulness of the test.  Test the change that you will implement
+Many of the most important DS contributions at a company are operational changes, not strategy changes.  If we test the 'idea' of a thing that we will do, and leave room for different implementation when a tested change is deployed, we lose the majority of the usefulness of the test.  Test the change that you will implement
 
 * Test the best option that you can propose
 
