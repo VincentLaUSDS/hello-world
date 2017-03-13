@@ -1,0 +1,21 @@
+An A/B Testing Primer
+
+* Test the change that you will implement
+
+Many of the most important DS contributions at a company are operational changes, not strategy changes.  If we test the 'idea' of a thing that we will do, and leave room for different implementation when a tested change is deployed, we lose the majority of the usefulness of the test.  Test the change that you will implement
+
+* Test the best option that you can propose
+
+Tests are precious.  An idea that warrants the investment of DS, Product, Operations, and Engineering to engage in multiple legs of implementation must be an idea that we have done work for.  We do not get to waste the company's time because we could not form an opinion about what should be done.  Relying on an A/B test to resolve your product design decisions saves a small amount of your time and the expense of a large amount of everyone else's time.
+
+* A successful test changes the product
+
+If an A/B test demonstrates a positive result that is worth the cost, we will implement it in the organization.  If there is an idea that we are curious about, but that will not drive action if shown to be successful, it is not worth testing.  If there is a discussion to be had over whether we would be willing to fully roll out a change, we have that discussion before the test is run, not after.  A test should not be run without the capacity to scale it out fully. 
+
+* Most tests are null, give your change as much power as possible
+
+The expected output of most tests should be 'no effect'.  This is not because most changes we make are actually meaningless, but only because most changes will be washed out by noise.  Because 'null' is the default, as much effort should be made as possible to deliver a statistically significant test result.  This means fighting in all places for more power in a test.  The question is not 'how few people do we need' but 'how can we observe as many possible impacts as we can'.
+
+* Treat as close to the change as possible
+
+A complement to 'test the change you will implement', make sure that your test recruits as few members as possible that will be unaffected by the change.  Including extraneous members will make it harder to extract the true result of your change from the background noise of unaffected members.  This is generally accomplished by selecting members for treatment and control as close as possible to where the tested change occurs.  The fewer steps they take between selection and change, the better.
