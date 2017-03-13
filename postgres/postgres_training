@@ -1,0 +1,83 @@
+Postgres Training
+Server Architecture & Server Tuning
+
+shared_buffers: Data is put before running a query
+
+What exactly is an index?
+
+pg_xlog: Journaling. In the journal you only write the instructions of how to write the file. The actual query is stored in memory when it's run. Thus, if there's a crash/memory loss, we can easily recreate what we had.
+
+pg_stat is a catalog table with the statistics for postgres
+
+Postgres 9.6 has parallel queries
+
+ctid is a hidden column with block and row number.
+
+Postgres has no lock escalation
+
+a view, pg_locks allows you to look at current locks
+
+There are optimistic locks which are locks that are "OK" to violate. If you hit a lock, you just try and re-run.
+
+There is a Returning Statement
+
+tatiyants.com/pev (explain display)
+explain.depesz.com (explain display)
+
+is there a difference in the types of indices?
+
+pg_stat_statements is a view that gives you information about different queries.
+
+insert into with exclude allows you to update insert
+http://www.postgresqltutorial.com/postgresql-upsert/
+
+Bank Balance example
+
+\set schema cloverdwh
+Begin;
+DROP SCHMEA IF EXISTS :schema CASCADE;
+CRETE SCHEMA :schema;
+SET search_path = :schema, public;
+
+-- (1) The business problem
+-- "Investigate the phenomenon of people having negative balances"
+-- Fact: the bank transaction
+-- Dimensions: time, account, teller -> branch
+
+CREATE TABLE fact
+(
+delta integer not null,
+t timestamp without time zone not null,
+aid integer not null,
+tid integer not null
+);
+
+CREATE TABLE diml
+(
+aid integer primary key,
+description text
+);
+
+CREATE TABLE dim2
+(
+tid integer primary key,
+bid integer not null,
+description text
+);
+
+-- Data workflow for fact
+
+INSERT INTO fact
+select delta, mtime, aid, tid
+from pgbench_history;
+
+--Dimension modeling
+
+INSERT INTO dim1(aid)
+SELECT aid from pgbench_accounts;
+
+INSERT INTO dim2(tid, bid)
+SELECT tid, bid FROM pgbench_tellers;
+
+
+COMMIT;
