@@ -1,0 +1,4 @@
+Some nice libraries
+https://crosscompute.com/notebooks
+geopy: https://crosscompute.com/s/ANUS9tGkzPKTdHpe3qwt6rbnvyP10CHbEJXQR8wijpLgd2fgpx0TEHzCZhSaS6OmYOlXTjUchpo4Cyvl763P20TvgAcl5CSf6LKhH3qsHZMXtjO4hZW715mS3xeVeh3o/notebooks/map-locations.ipynb
+kdtree
