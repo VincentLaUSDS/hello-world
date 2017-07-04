@@ -11,3 +11,5 @@ PostgreSQL 9.6.2 provided by BigSQL: http://oscg-downloads.s3.amazonaws.com/pack
 ```
 psql -p 5432 -h localhost -U postgres
 ```
+
+https://stackoverflow.com/questions/15301826/psql-fatal-role-postgres-does-not-exist
