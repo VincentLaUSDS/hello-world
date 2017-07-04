@@ -4,9 +4,10 @@
 I use Anaconda
 
 ## Postgresql
-https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04
+https://medium.com/@colinrubbert/installing-ruby-on-rails-in-windows-10-w-bash-postgresql-e48e55954fbf
+Lets download and install the latest stable version of PostgreSQL Windows binary.
+PostgreSQL 9.6.2 provided by BigSQL: http://oscg-downloads.s3.amazonaws.com/packages/PostgreSQL-9.6.2-2-win64-bigsql.exe 
+
 ```
-sudo apt install postgresql-client-common
-sudo apt-get update
-sudo apt-get install postgresql postgresql-contrib
+psql -p 5432 -h localhost -U postgres
 ```
