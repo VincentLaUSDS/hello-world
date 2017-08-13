@@ -56,3 +56,8 @@ For example,
 ```
 psql postgres://localhost:5432/VincentLa < schema.sql
 ```
+
+or (for bash on Ubuntu on Windows)
+```
+psql -p 5432 -h localhost < schema.sql
+```
