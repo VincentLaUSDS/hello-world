@@ -1,4 +1,4 @@
-Schema Dump
+# Schema Dump
 ```
 pg_dump $DBURI -s > schema.sql
 ```
@@ -14,9 +14,9 @@ If you run into an error that looks like the following:
 ```
 pg_dump: server version: 9.6.2; pg_dump version: 9.5.7
 pg_dump: aborting because of server version mismatch
-```,
+```
 
-you need to update your version of `pg_dump`. The following is a potential solution: https://github.com/laradock/laradock/issues/778 (Confirmed that this works on Bash on Ubuntu for Windows)
+You need to update your version of `pg_dump`. The following is a potential solution: https://github.com/laradock/laradock/issues/778 (Confirmed that this works on Bash on Ubuntu for Windows)
 
 ```
 sudo apt-get update
@@ -42,7 +42,7 @@ One solutions would be to just point the right version of `pg_dump`, for example
 /usr/lib/postgresql/9.6/bin/pg_dump -d postgres --host=hostname --username=username --port=5432 -s > schema.sql
 ```
 
-Load to DB
+# Load to DB
 ```
 psql $DBURI < schema.sql
 ```
