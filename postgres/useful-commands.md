@@ -8,6 +8,8 @@ For example,
 pg_dump -d postgres --host=hostname --username=username --port=5432 -s > schema.sql
 ```
 
+After running the above command, it will prompt for a password. Enter the password.
+
 Load to DB
 ```
 psql $DBURI < schema.sql
