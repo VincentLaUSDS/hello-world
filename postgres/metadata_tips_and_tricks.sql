@@ -70,3 +70,17 @@ from pg_description
 where pg_namespace.nspname = <schema_name>
  and pg_class.relname = <table_name>
 ;
+
+--Selecting Actively running queries
+select 
+  pid,
+  usename,
+  application_name,
+  query_start,
+  now() - query_start as time_elapsed,
+  state,
+  query
+from pg_stat_activity
+where pid <> pg_backend_pid()
+order by pid
+;
