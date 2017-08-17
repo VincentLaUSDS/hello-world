@@ -61,3 +61,9 @@ or (for bash on Ubuntu on Windows)
 ```
 psql -p 5432 -h localhost < schema.sql
 ```
+
+# Miscellaneous
+Seeing all local instances of postgres running:
+```
+pg_ctl -D /usr/local/var/postgres status
+```
