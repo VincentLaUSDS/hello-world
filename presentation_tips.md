@@ -7,4 +7,4 @@ In a business context, you're not trying to prove causality, you're trying to ge
 
 This is most applicable perhaps given a null esult. By that I mean if you get a null result the conclusion is we can't detect a meaningful effect. If you don't buy the assumptions you're also basically saying you don't know if you can detect a meaningful result. In the scenario where you can iterate on your analysis, then do it. If you can't, you're in the same conclusion.
 
-There are cases where even that is goid enough. Especially when naive analysis pushes towards a result plagued by endogeneity biases and the operational decision is X, if you say we can't detect anything to tap the brakes, that can be good enough.
+There are cases where even that is good enough. Especially when naive analysis pushes towards a result plagued by endogeneity biases and the operational decision is X, if you say we can't detect anything to tap the brakes, that can be good enough.
