@@ -16,8 +16,10 @@ def get_claims_base_data(claim_lines, codes):
     columns = [
         claim_lines.c.personid,
         claim_lines.c.servicing_provider_npi,
+        claim_lines.c.specialty,
         claim_lines.c.procedure_code,
         claim_lines.c.procedure_name,
+        claim_lines.c.paid_amount,
         sa.sql.func.string_to_array(
             claim_lines.c.procedure_name, ',').label('procedure_name_array')]
     condition = sa.and_(
