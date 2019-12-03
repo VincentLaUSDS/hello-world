@@ -10,6 +10,24 @@ Can then filter to where the rank is above X number
 
 # ML
 
+## Komodo Health (2019-11-19)
+Let's say you have claims data with patient_id, and a bunch of demographic, diagnosis, procedure, and medication information about the patient. How would you go about predicting whether the patient has a certain disease or not?
+
+```
+EDA
+1. Check for duplicates
+2. Check for missing data
+3. Check for class imbalance
+4. Check correlations between features
+
+Feature Engineering
+
+Modeling
+
+Model Evaluation
+
+```
+
 ## Next Insurance (2019-11-26)
 Say you have bivariate data, y and X. I tell you that the way the data is distributed, the true model fits a piecewise linear function where there is a threshold, T below which there is one line to fit, above which there is another line to fit. How do you find the optimal value of T?
 
