@@ -62,3 +62,14 @@ Thus, the solution is that we compute midpoint, calculate MSE. Then compute MSE 
 ## Komodo Health (2019-11-19)
 
 Write a program to find the square root of a number
+
+# Behavioral Questions
+
+## General Questions
+1. Why are you interested in this company? (Asked in almost every interview. You should definitely have a good answer to this)
+2. Tell me about a time you dealt with conflict with a coworker or a manager. How did you resolve it?
+
+## Prealize Health (2019-12-19)
+
+1. Based on what you know so far, what do you think is Prealize's moat (differentiator compared to competitors)
+2. Talk about your resume experience. How would you explain it to a technical person? How would you explain it to a non-technical person?
