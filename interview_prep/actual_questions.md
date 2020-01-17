@@ -8,9 +8,9 @@ Basically the idea would be to use a window function to rank each employee by de
 Can then filter to where the rank is above X number
 ```
 
-# ML
+# ML and Statistical Modeling
 
-## Komodo Health (2019-11-19)
+## Komodo Health (2019-11-19; Onsite)
 Let's say you have claims data with patient_id, and a bunch of demographic, diagnosis, procedure, and medication information about the patient. How would you go about predicting whether the patient has a certain disease or not?
 
 ```
@@ -21,14 +21,18 @@ EDA
 4. Check correlations between features
 
 Feature Engineering
+1. One-hot encode or label encode categorical variables
 
 Modeling
+1. Logistic Regression or Random Forest are usually good places to start. Tradeoffs are Logistic Regression is easier to implement and interpret. Tree based models tend to do better to account for nonlinearities
+2. Can try hypertuning but usually that's after you try other low hanging fruit
 
 Model Evaluation
+1. Accuracy is usually not a good measure in cases of class imbalance
 
 ```
 
-## Next Insurance (2019-11-26)
+## Next Insurance (2019-11-26; Technical Phone Screen)
 Say you have bivariate data, y and X. I tell you that the way the data is distributed, the true model fits a piecewise linear function where there is a threshold, T below which there is one line to fit, above which there is another line to fit. How do you find the optimal value of T?
 
 ```
@@ -55,6 +59,58 @@ Then we can compute the midpoint to the left and to the right. Because we know t
 2. Once we pick one side, it's not possible for the other side to be better. That is, no subset of the worse side can yield better results than picking the other side. The performance is monotonically improving
 
 Thus, the solution is that we compute midpoint, calculate MSE. Then compute MSE of left side, and right side and pick the one that is better. Continue doing this until you've searched the space. This should run in o(nlog n). log(n) because of the search, n because of the cost to compute OLS weights. 
+```
+
+## Next Insurance (2019-12-11; Onsite)
+Let's say you have three tables
+
+1. `Policy`: `id`, `class`, `payroll`, `premium`
+2. `Claims`: `id`, `dollar_amount`
+3. `Features`: `Yelp Reviews`, `Credit Score`, etc.
+
+Let's say we wanted to add the additional features in the `Features` table in to better predict claim amounts to price better. In this case, lets say we want to price as close to the expected dollar amount as much as possible. How would we do this?
+
+First Answer:
+```
+We can think of this as a regression problem where we are basically just trying to predict claim amount.
+```
+
+Second Question: How do you know if your regression model worked well? How do you know if it's "good enough" to use in our pricing models?
+
+Second Answer:
+```
+You can look at MSE
+```
+
+Third Question: But how do you know what MSE is good? Is 1000 good, is 50,000 MSE bad or good?
+```
+You can calculate a baseline MSE amount using existing actual premium to claim data
+``` 
+
+Fourth Question: What might you do if you're not getting a good MSE? How would you think about aggregating results to predict at a group level?
+
+```
+Not sure if I had a good answer to this in the interview; see https://towardsdatascience.com/how-to-measure-the-goodness-of-a-regression-model-60c7f87614ce perhaps?
+```
+
+Fifth Question: Why might the model be miscalibrated? What can you do about calibration issues?
+
+```
+Didn't have a good answer to this during the interview; Googling around seems to yield some useful links
+```
+
+## Next Insurance (2019-12-11; Onsite)
+Lets say you have one table with the following columns: `class`, `payroll`, `revenue`, `number_employees`. Let's say that there are concerns that certain companies are falsfiying data to get better premiums. How might you check for input data validity?
+
+```
+I framed this as an outlier detection problem. Basically the idea is that you have to establish some prior on what you would expect and then compare the actual data to your priors. Things that deviate significantly are likely to be false. 
+
+You could try clustering here; you would need some way to deal with categorical variables. One-Hot encoding can yield sparsity issues. 
+
+A guide on Outlier Detection: https://towardsdatascience.com/a-brief-overview-of-outlier-detection-techniques-1e0b2c19e561
+https://towardsdatascience.com/how-to-use-machine-learning-for-anomaly-detection-and-condition-monitoring-6742f82900d7
+
+both of these seem to point to similar solutions
 ```
 
 # Programming
