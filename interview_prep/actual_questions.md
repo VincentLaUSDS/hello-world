@@ -113,6 +113,13 @@ https://towardsdatascience.com/how-to-use-machine-learning-for-anomaly-detection
 both of these seem to point to similar solutions
 ```
 
+## Stanford RegLab (2019-10-14)
+With Regression Discontinuity Design, how do you test if there is actually a discontinuity at the threshold? How do you test the bandwidth to use around the threshold?
+
+This is a good practitioner's guide to RDD: https://www.mdrc.org/sites/default/files/regression_discontinuity_full.pdf. Briefly
+1. On testing the discontinuity, you can use McCrary's Test
+2. There is an approach to use Cross Validation to test the bandwidth around the threshold.
+
 # Programming
 
 ## Komodo Health (2019-11-19)
