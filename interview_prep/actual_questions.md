@@ -120,6 +120,11 @@ This is a good practitioner's guide to RDD: https://www.mdrc.org/sites/default/f
 1. On testing the discontinuity, you can use McCrary's Test
 2. There is an approach to use Cross Validation to test the bandwidth around the threshold.
 
+## General Prep
+How do you test for overfitting?
+
+1. https://stats.stackexchange.com/questions/333199/random-forest-has-almost-perfect-training-auc-compared-to-other-models
+
 # Programming
 
 ## Komodo Health (2019-11-19)
