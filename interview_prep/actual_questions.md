@@ -120,6 +120,12 @@ This is a good practitioner's guide to RDD: https://www.mdrc.org/sites/default/f
 1. On testing the discontinuity, you can use McCrary's Test
 2. There is an approach to use Cross Validation to test the bandwidth around the threshold.
 
+## Metis (2020-05-15)
+Let's say you are deciding between two models, kNN regression vs logistic regression. Let's say you trained and they achieved the exact same performance (on train, validation, and test). Which do you choose in production
+
+1. I would still go with Logistic regression because of concerns of overfitting with kNN
+2. Also if magically they really were somehow magically the same, still go with Logistic because at test/scoring time, kNN needs to keep track of all training data and then calculate distance between test data to train data to make prediction. This is computationally intensive and slow. Logistic Regression you just need the weights.
+
 ## General Prep
 How do you test for overfitting?
 
