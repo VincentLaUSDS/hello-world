@@ -126,6 +126,15 @@ Let's say you are deciding between two models, kNN regression vs logistic regres
 1. I would still go with Logistic regression because of concerns of overfitting with kNN
 2. Also if magically they really were somehow magically the same, still go with Logistic because at test/scoring time, kNN needs to keep track of all training data and then calculate distance between test data to train data to make prediction. This is computationally intensive and slow. Logistic Regression you just need the weights.
 
+## Metis (2020-05-15)
+Explain an example of supervised learning vs unsupervised learning as if I was someone new to data science.
+
+## Metis (2020-05-15)
+Explain what regularization is
+
+## Metis (2020-05-15)
+How would you tune the lambda parameter for regularization?
+
 ## General Prep
 How do you test for overfitting?
 
