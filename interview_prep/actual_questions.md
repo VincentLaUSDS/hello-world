@@ -135,6 +135,10 @@ Explain what regularization is
 ## Metis (2020-05-15)
 How would you tune the lambda parameter for regularization?
 
+## Blue Owl (2020-06-01)
+1. Are you familiar with GLM models (GLM models are very popular in P&C)
+2. Are you familiar with building custom transformers in sci-kit-learn? Are you comfortable with building end-to-end pipelines using customer transformers and grid search?
+
 ## General Prep
 How do you test for overfitting?
 
