@@ -160,3 +160,9 @@ Write a program to find the square root of a number
 
 1. Based on what you know so far, what do you think is Prealize's moat (differentiator compared to competitors)
 2. Talk about your resume experience. How would you explain it to a technical person? How would you explain it to a non-technical person?
+
+## Bestow Life (2020-06-25)
+Conversation with cofounder
+
+1. Given your experience working with PhDs vs non-PhDs, people with business experience vs research modeling, infrastructure vs data science vs business, how do you think about the effective makeup of the team (e.g. where do you want your team to excel at) and where do you fit?
+2. In terms of infrastructure work (I said that's where I'm weakest), do you feel comfortable interfacing with them. How do you reason about tradeoffs even if you are not an expert?
