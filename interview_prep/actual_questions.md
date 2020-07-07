@@ -162,10 +162,15 @@ Write a program to find the square root of a number
 2. Talk about your resume experience. How would you explain it to a technical person? How would you explain it to a non-technical person?
 
 ## Bestow Life (2020-06-25)
-Conversation with cofounder
+Conversation with Jonathan (cofounder)
 
 1. Given your experience working with PhDs vs non-PhDs, people with business experience vs research modeling, infrastructure vs data science vs business, how do you think about the effective makeup of the team (e.g. where do you want your team to excel at) and where do you fit?
 2. In terms of infrastructure work (I said that's where I'm weakest), do you feel comfortable interfacing with them. How do you reason about tradeoffs even if you are not an expert?
 3. What is your experience as a technical lead, how is it relevant to management, where do you feel like you have not yet interfaced the most?
     1. I said project level, full stack. Where I haven't yet interfaced the most directly is hiring specifically (that was likely a mistake, I should have said people management I think because they are looking for someone to directly hire and build out a team. --> but then go into that by saying although I haven't technically been a people manager, in many ways as tech lead I had similar responsibilities). 
 4. Where do you see yourself in the future? What do you want to be?
+
+Conversation with Dan (Head Actuary)
+
+1. Given limited experience, how do you think about modeling and how do you know it works?
+    1. My answer, which seemed to resonate quite well with him, was well in general you can look for proxies, you can do pilots, but honestly mortality predictions would not be my first bet.
