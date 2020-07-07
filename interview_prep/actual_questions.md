@@ -173,4 +173,5 @@ Conversation with Jonathan (cofounder)
 Conversation with Dan (Head Actuary)
 
 1. Given limited experience, how do you think about modeling and how do you know it works?
-    1. My answer, which seemed to resonate quite well with him, was well in general you can look for proxies, you can do pilots, but honestly mortality predictions would not be my first bet.
+    1. My answer, which seemed to resonate quite well with him, was well in general you can look for proxies, you can do pilots, but honestly mortality predictions would not be my first bet. I would look first into growth, maybe some fraud detection with the web analytics. You can try some of the mortality stuff and prototype it first, but not commit fully to it yet. We tried reserves and hospitalizations and IBNR at Clover and it was really hard. 
+2. Tell me about your background, do you like your current job, why are you interested in Bestow?
