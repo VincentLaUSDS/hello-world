@@ -150,6 +150,16 @@ How do you test for overfitting?
 
 Write a program to find the square root of a number
 
+## Level (2020-08-21)
+
+Question: Write a program to predict temperature (using only base Python no libraries)
+
+I basically started with just naively predict the average for all cases. More nuanced is you can predict the average based on just the hour. See the [Temperature Prediction](./notebooks/temperature-prediction.ipynb) notebook for more details.
+
+Question: what if you had access to all libraries (pandas, numpy, scikitlearn, etc.) How would you model this now?
+
+You would want to take into account seasons. So set up a spline OLS regression where the splines are defined by season and then do an OLS fit. 
+
 # Behavioral Questions
 
 ## General Questions
