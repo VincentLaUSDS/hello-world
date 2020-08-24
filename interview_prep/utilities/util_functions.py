@@ -20,6 +20,10 @@ def get_git_root(path):
     return git_root
 
 
+def custom_round(x, base=5):
+    return base * round(x / base)
+
+
 def check_missing_values(data):
     """Checks Missing Values By Column in Data"""
     df_count_missing = pd.DataFrame({
