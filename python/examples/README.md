@@ -24,3 +24,22 @@ df['antibiotic_flag'] = df.apply(lambda row: label_antibiotic(row, antibiotic_li
 
 df.loc[df['antibiotic_flag']].groupby(['CSN']).agg({'ANTIBIOTIC ORDER TIME': np.min})
 ```
+
+Equivalent of Group By Count(\*) in PostgreSQL
+
+```
+df = pd.DataFrame({
+    'a': ['A', 'A', 'B', 'C', 'D', 'E'],
+    'npdes_permit_id': ['AK000', 'AK000', 'BD', 'CD', 'DE', 'EF']
+})
+
+df.groupby(['a', 'npdes_permit_id'])['npdes_permit_id'].count()
+
+a  npdes_permit_id
+A  AK000              2
+B  BD                 1
+C  CD                 1
+D  DE                 1
+E  EF                 1
+Name: npdes_permit_id, dtype: int64
+```
