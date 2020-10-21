@@ -187,3 +187,14 @@ Conversation with Dan (Head Actuary)
 2. Tell me about your background, do you like your current job, why are you interested in Bestow?
 3. For the [Sentinel Effect](https://sentineleffect.wordpress.com/about/) productivity and outcomes can be improved through process of observation, should we use computer vision for Face ID to categorize patients?
     1. My answer, we could, i do have computer vision background, but honestly probably not. The whole point of Bestow is to make the process super easy. We're now adding this step of downloading an app taking a picture, it adds additional steps. At that point, why not just put a doctor on the other side and make it a telemedicine visit, but that's the thing we're trying to avoid.
+    
+## CMS (2020-10-21)
+1. Can you think of an example, where you’re working on a problem and you want to use one data technique but you have a disagreement with a coworker who wants to use a different data technique/different tool to solve a problem and how would you resolve?
+    1. My answer was rambling. I used the In Home Primary Care Example, I could have been more succinct by saying:
+        1. We had an in-home primary care initiative. Clinical folks, executives just wanted to go for it, and just measure pre-post which has a lot of problems
+        2. Spent a lot of time convincing them that this is not valid because of bias
+        3. Resolved this by setting up an RCT
+        4. When setting up the RCT, we didn't have that many lives, so we didn't have a lot of power, this necessitated longer windows, but we didn't have time for longer windows, business reasons/investors, etc.
+        5. They wanted to peak early -- which we know is not good because there's so much variance
+        6. Dissolved the control group but resolved by setting up Propensity Score Matching
+        7. So in each case there's a tension between careful analysis potentially taking up more time/resources vs understanding the true efficacy to guide business decisions and that's how I went about resolving by advocating for analysis but also being realistic and compromising on business decisions. 
