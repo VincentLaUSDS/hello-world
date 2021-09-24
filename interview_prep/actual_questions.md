@@ -10,6 +10,17 @@ Can then filter to where the rank is above X number
 
 # ML and Statistical Modeling
 
+## Recidiviz (2019; Onsite)
+Note, forgot to record the interview questions at the time so backfilling
+
+1. The main question I remember was around how to deal with bias 
+
+Basically the answer is that you can't just account for the variables (e.g. racial) in a standard regression. This is because including the variables in there, you can't account for all the unobservables. If you remove the variables, correlated variables will just pick it up (e.g. Zip Code).
+
+There was a "general framework" in a linear regression approach where you combine two regressions, one that uses the variables, one that doesn't, but I'm forgetting.
+
+Machine Learning wise, the idea is to basically add "fairness" to the cost function: https://towardsdatascience.com/understanding-and-reducing-bias-in-machine-learning-6565e23900ac, which generally makes sense. I'm forgetting my original answer but this seems good enough. 
+
 ## Komodo Health (2019-11-19; Onsite)
 Let's say you have claims data with patient_id, and a bunch of demographic, diagnosis, procedure, and medication information about the patient. How would you go about predicting whether the patient has a certain disease or not?
 
